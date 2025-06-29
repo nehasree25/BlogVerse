@@ -1,0 +1,13 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'register/home.css' %}">
+</head>
+<body>
+    <h1>Welcome to Blog Site</h1>
+    <button><a href="{% url 'signup' %}">Get Started</a></button>
+</body>
+</html>

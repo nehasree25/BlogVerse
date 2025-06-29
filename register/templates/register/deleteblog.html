@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+    <link rel="stylesheet" href="{% static 'register/delete.css' %}">
+</head>
+<body>
+    <div class='del'>
+        <p>Are you sure you want to delete "{{ blog.title }}"?</p>
+        <form method="POST">
+            {% csrf_token %}
+            <button type="submit">Yes, delete</button>
+            <a href="{% url 'allblogs' %}">Cancel</a>
+        </form>
+    </div>
+    
+
+</body>
+</html>

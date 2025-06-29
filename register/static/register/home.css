@@ -1,0 +1,14 @@
+* {
+    text-align: center;
+
+}
+body{
+    margin: 20%;
+}
+h1 {
+    font-size: 600;
+    font-weight:800;
+}
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(135deg, #ffe2ed, #f8729b, #fca3c0, #ffe2ed);
+    min-height: 100vh;         /* ensures full screen height */
+    background-attachment: fixed; /* keeps background fixed during scroll */
+    background-repeat: no-repeat;
+    background-size: cover;     /* stretches gradient to fill */
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    font-size: 40px;
+    text-align: left;
+    padding:10px;
+    padding-left: 50px;
+
+}
+nav a{
+    text-decoration: none;
+    color:rgb(13, 13, 13);
+    padding-right: 50px;
+    font-size: 20px;
+}
+nav a:hover{
+    cursor: pointer;
+    color: #0e0e0e;
+    text-decoration: underline;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    /* border: 2px rgb(249, 245, 245) solid; */
+    padding:100px 0px;
+    margin: 75px 150px;
+    background-color: rgba(255, 255, 255, 0.478);
+
+}
+.form p{
+    display: flex;
+    flex-direction: column;
+}
+.form input{
+    width: 700px;
+    height: 50px;
+}
+.form label {
+    font-size: 20px;
+    font-weight: 400;
+}
+/* Match textarea (Content) width with input (Title) */
+.form textarea {
+    width: 700px;
+    height: 200px;
+    resize: vertical;
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Improve input padding and font */
+.form input {
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    color:white;
+    background:#0f0f0f;
+    margin-top: 10px;
+    width: 100px;
+    height:50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+button:hover {
+    background: #585656;
+}
+/* Center labels and inputs better */
+.form p {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 15px;
+}
+
+/* Align labels above inputs with some spacing */
+.form label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Center the button */
+.form button {
+    display: block;
+    margin: 20px auto 0 auto;
+}
+@media (max-width: 1000px) {
+    .form {
+        margin: 20px;
+        padding: 50px 20px;
+    }
+
+    .form p {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .form input,
+    .form textarea {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .form label {
+        font-size: 18px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 150px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+        padding-left: 20px;
+    }
+
+    nav a {
+        padding-right: 20px;
+        font-size: 16px;
+    }
+
+    .form {
+        padding: 30px 10px;
+    }
+
+    .form label {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+@media (max-width: 1000px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    nav a {
+        padding: 5px 0;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+        padding-left: 0;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .form {
+        margin: 20px;
+        padding: 60px 20px;
+    }
+
+    .form input,
+    .form textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+        max-width: 150px;
+    }
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 4px 0;
+    }
+
+    h1 {
+        font-size: 26px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 3px 0;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        padding: 30px 15px;
+        margin: 10px;
+    }
+
+    .form p {
+        max-width: 100%;
+    }
+
+    .form input,
+    .form textarea {
+        width: 100%;
+    }
+
+    .form label {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}

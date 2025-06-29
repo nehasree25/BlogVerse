@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="{% static 'register/allblogs.css' %}">
+</head>
+<body>
+    <div class='full'>
+        <nav>
+            <h1>Blogs</h1>
+            <div class="nav-1">
+                <a href="{% url 'createblog' %}">Add Blog</a>
+                <a href="{% url 'myblogs' %}">My Blogs</a>
+                <a href="{% url 'allblogs' %}">All Blogs</a>
+                <a href="{% url 'logout' %}">Logout</a>
+            </div>
+        </nav>
+        
+        {% for i in blogs %}
+        <div class="blog">
+            <p class="author">Author : {{i.author}}</p>
+            <hr>
+            <br>
+            <p class="title">{{i.title}}</p>
+            <br>
+            <p class="content">{{i.content}}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
