@@ -13,10 +13,10 @@
             <form method="POST">
                 {% csrf_token %}
                 {{form.as_p}}
-                <button type="submit" class='submit'>Submit</button>
+                <button type="submit" class='submit'>Login</button>
             </form>
             <div class='footer'>
-                <p>Create Account</p>
+                <p>Create New Account</p>
                 <a href="{% url 'signup' %}">Signup</a>
             </div>
         </div>
