@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 18px;
+    font-size: 20px;
 }
 body {
     background: linear-gradient(135deg, #ffe2ed, #f8729b, #fca3c0, #ffe2ed);
@@ -96,7 +96,7 @@ nav a:hover {
 }
 
 .title {
-    font-size: 25px;
+    font-size: 27px;
 }
 .author{
     font-size: 30px;
